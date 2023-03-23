@@ -7,10 +7,13 @@
 
 body {
     background-color: antiquewhite;
-    justify-items: center;
-    text-align: center;
 }
 
 div {
+    width: 30%;
+    height: 300px;
+    margin-top: 220px;
+    margin-left: 35%;
+    text-align: center;
     border: 3px solid #823 ;
 }
