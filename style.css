@@ -16,4 +16,5 @@ div {
     margin-left: 35%;
     text-align: center;
     border: 3px solid #823 ;
+    border-radius: 7px;
 }
