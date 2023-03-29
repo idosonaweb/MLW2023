@@ -7,14 +7,36 @@
 
 body {
     background-color: antiquewhite;
+    text-align: center;
+    justify-items: center;
 }
 
-div {
-    width: 30%;
+.one {
+    width: 25%;
     height: 300px;
     margin-top: 220px;
     margin-left: 35%;
-    text-align: center;
     border: 3px solid #823 ;
     border-radius: 7px;
+    
+}
+
+.two {
+    width: 25%;
+    height: 300px;
+    margin-left: 5%;
+    margin-top: -305px;
+    border: 3px solid #823 ;
+    border-radius: 7px;
+    
+}
+
+.three {
+    width: 25%;
+    height: 300px;
+    margin-left: 65%;
+    margin-top: -307px;
+    border: 3px solid #823 ;
+    border-radius: 7px;
+    
 }
