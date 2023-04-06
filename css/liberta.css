@@ -1,0 +1,68 @@
+body {
+
+    padding: 0;
+    margin: 0;
+    background-color:rgb(17, 16, 16);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p, a, h2, h1, ul {
+
+    color: aliceblue;
+}
+
+.ancora {
+    width: 50%;
+    height: 200px;
+    border: 3px solid #bbb;
+}
+.galeria {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.galeria img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.premium {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: auto;
+}
+
+.camp {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+
+}
+
+.oque {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+
+}
