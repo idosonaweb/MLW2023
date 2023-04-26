@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <form method="post" action="">
+        
+        <fieldset>
+
+            <legend>Dados Login</legend>
+
+            <div>
+
+                <label for="usuario">Nome do usuário: </label>
+
+                <input type="text" name="usuario" id="nome" placeholder="Digite seu nome" size="20" maxlength="10">
+
+            </div>
+
+            <br>
+
+            <div>
+
+                <label for="senha">Senha: </label>
+
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" size="20" minlength="8">
+
+            </div>
+
+            <br>
+
+        </fieldset>
+
+        <fieldset>
+            
+            <legend>Dados Funcionais</legend>
+
+            <div>
+
+                <label>Profissão </label><br>
+
+                <input type="radio" name="profissao" id="professor">
+
+                <label>Professor</label>
+
+                <input type="radio" name="profissao" id="estudante" checked>
+
+                <label>Estudante</label>
+
+                <input type="radio" name="profissao" id="outros">
+
+                <label>Outros</label>
+
+            </div>
+
+            <br>
+
+            <div>
+
+                <label>Qual a tecnologia dominada?</label><br>
+
+                <input type="checkbox" name="html" id="html">
+
+                <label>HTML</label>
+
+                <input type="checkbox" name="css" id="css">
+
+                <label>CSS</label>
+
+                <input type="checkbox" name="js" id="js">
+
+                <label>JS</label>
+
+            </div>
+
+            <br>
+
+            <div>
+
+                <label>Deixe seu recado</label><br>
+
+                <textarea name="" id="" cols="55" rows="8" placeholder="Deixe seu recado"></textarea>
+
+            </div>
+
+            <br>
+
+            <div>
+                <label>Qual sua escolaridade</label>
+
+                <select name="escola" id="esc">
+                    <option value="1">Ensino Fundamental 1</option>
+                    <option value="2">Ensino Fundamental 2</option>
+                    <option value="3">Ensino Médio</option>
+                    <option value="4">Ensino Superior</option>
+                    <option value="5">Pós Graduação</option>
+                    <option value="6">Outro</option>
+                </select>
+
+            </div>
+
+        </fieldset>
+
+        <br>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </div>
+
+    </form>
+</body>
+</html>
