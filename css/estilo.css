@@ -2,3 +2,10 @@ ol li a:hover {
     color: blueviolet;
     cursor: zoom-in;
 }
+
+h2 {
+
+    background-color: aquamarine;
+}
+
+div p strong a { font-size: 30px;}
