@@ -1,0 +1,25 @@
+.serif {
+
+    font-family: serif;
+}
+
+.nserif {
+
+    font-family: sans-serif;
+}
+
+.mono {
+
+    font-family: monospace;
+}
+
+.fs {
+
+    font-style: oblique;
+}
+
+.fw {
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 16px;
+}

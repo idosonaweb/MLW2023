@@ -1,0 +1,26 @@
+.bgcolor {
+
+    background-color: palegoldenrod;
+    height: 50px;
+    text-align: center;
+}
+
+.bgimage {
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQMOnRMLIbwMHNJ2EtpzTWFISOwo6z9cv_5kMhCFpsB8yMAYYEJBDNNWqFfCfa3FDbTDk&usqp=CAU) ;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bgimage p {
+
+    background-color: rgba(133, 209, 203, 0.637);
+    text-align: center;
+}
+
+body {
+
+    background-image: url(https://cdn.shopify.com/s/files/1/0293/7192/4613/files/granilite_desktop.png?v=1625085631);
+    background-attachment: fixed;
+}
