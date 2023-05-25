@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            /* 
+            position: fixed; --> Fixa o elemento, e lá permanece, mesmo a página contendo um scroll
+            position: static; --> Segue o fluxo de layout da página, espaço de origem é ocupado 
+            position: relative; --> Junto dos atributos top, right, left e top, movimenta o elemento de acordo com o valor digitado; 
+                Sobrepõe elementos, mas preserva seu espaço de origem 
+            position: absolute; --> Mesma coisa do relative, mas não preserva seu espaço de origem     
+            */
+        }
+        .divs {
+            width: 100px;
+            height: 100px;
+            /* margin-left: 50px; --> Espaçamento entre divs: 1 - Esquerda   2 - Direita   3 - Em cima   4 - Em baixo */ 
+            margin: 0;
+            padding: 0 ; /* Espaçamento entre a borda da div com o contéudo interno; Influencia no tamanho da div */
+            /* display: inline-block; --> Ignora qualquer margin que vc digitar */
+        }
+
+        #div1 {
+            background-color: blue;
+            z-index: 1; /* Elemento com o número maior, sobrepõe o menor, trabalhando com camadas */
+
+        }
+
+        #div2 {
+            background-color: brown;
+
+        }
+
+        #div3 {
+            background-color: cadetblue;
+
+        }
+
+        #div4 {
+            background-color: yellow;
+        }
+
+        #tudo {
+            width: 100%;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        h1 {
+            margin: 20px;
+            border: 2px dashed red;
+            margin-left: 100px;
+            padding-left: 30px;
+            padding-top: 15px;
+            height: 80px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="tudo">
+
+        <div id="div1" class="divs">
+    
+        </div>
+    
+        <div id="div2" class="divs">
+    
+        </div>
+    
+        <div id="div3" class="divs">
+    
+        </div>
+    
+        <div id="div4" class="divs">
+    
+        </div>
+
+        <div id="div2" class="divs">
+    
+        </div>
+    
+    </div>
+
+    <h1>Cabeçalho</h1>
+</body>
+</html>
