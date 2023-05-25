@@ -1,0 +1,26 @@
+/* 
+
+    ----- Position -----
+
+    position: fixed; --> Fixa o elemento, e lá permanece, mesmo a página contendo um scroll
+    position: static; --> Segue o fluxo de layout da página, espaço de origem é ocupado 
+    position: relative; --> Junto dos atributos top, right, left e top, movimenta o elemento de acordo com o valor digitado; 
+    Sobrepõe elementos, mas preserva seu espaço de origem 
+    position: absolute; --> Mesma coisa do relative, mas não preserva seu espaço de origem  
+    
+    ----- Margin -----
+
+    margin-left: 50px; --> Espaçamento entre divs: 1 - Esquerda   2 - Direita   3 - Em cima   4 - Em baixo
+
+    ----- Padding ----
+    
+    padding: 0 ; Espaçamento entre a borda da div com o contéudo interno; Influencia no tamanho da div
+    
+    ----- Display ----
+
+    display: inline-block; --> Ignora qualquer margin que vc digitar
+
+    ----- Z-index ----
+
+    z-index: 1; /* Elemento com o número maior, sobrepõe o menor, trabalhando com camadas 
+*/
