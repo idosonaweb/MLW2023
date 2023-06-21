@@ -1,0 +1,116 @@
+/* Zerando cálculos padrão de margin, padding da página no navegador*/
+* { 
+    margin: 0; /*Zerando margin da página*/
+    padding: 0; /*Zerando distãncia da página*/
+    box-sizing: border-box; /* Para tirar do cálculo do navegador valores de bordas e margens da dimensão de um elemento. */
+  }
+  body { /*Configurando o body para centralizar todo o seu conteúdo, verticalmente e horizontalmente*/
+    display: flex;
+    justify-content: center; /*Alinha os elementos horizontalmente*/
+    align-items: center; /*Alinha os elementos verticalmente*/
+    min-height: 100vh; /*Dando um mínimo de altura para o body de 100vh, ou seja, toda tela verticalmente*/
+    font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important; /*Definindo fonte da escrita*/
+  }
+  .box { /*Definindo medidas da caixa div para o login em si*/
+    position: relative; /*Elemento com posição garantida, mas passível de movimento caso algum valor seja designado*/
+    width: 420px; /*Recorta elementos que sobressaem a caixa div, sem barra de rolagem, oculta*/
+    height: 450px; /*Define altura*/
+    border-radius: 25px; /*Arredonda a borda*/
+    overflow: hidden; /*Alinha os elementos horizontalmente*/
+    border: 2px solid #9163d7; /*Contorno da caixa div*/
+  }
+  .form { /*Conteúdo do login, sendo uma div dentro de outra*/
+    position: absolute; /*Mesmo caso do relative, mas sem posição garantida, passível de movimento caso algum valor seja designado*/
+    inset: 2px; /*Define a distância do elemento filho para o elemento pai*/
+    padding: 50px 40px; /*Valor designado para movimento desta div*/
+  }
+  .form h2 {
+    color: #656565; /*Define a cor da fonte da escrita*/
+    font-weight: 500; /*Definindo o peso da escrita*/
+    text-align: center; /*Centraliza o texto*/
+    letter-spacing: 0.1em; /*Espaçamento entre os caracteres*/
+    text-transform: uppercase; /*Define todos os caracteres como maiúsculos*/
+  }
+  .inputBox {
+    position: relative; /*Já explicado*/
+    width: 320px; /*Definindo a largura da div pai*/
+    margin-top: 32px; /*Distância do elemento em relação ao topo da div*/
+  }
+  .inputBox input {
+    position: relative; /*Já explicado*/
+    width: 100%; /*Definindo a largura do input*/
+    padding: 15px 0px 8px; /*Posicionando o input em relação a sua div pai*/
+    background: transparent; /*Fundo definido como transparente*/
+    border: none; /*Sem bordas*/
+    outline: none; /*Sem contorno*/
+    color: #656565; /*Define a cor da fonte da escrita*/
+    font-size: 1em; /*Definindo tamanho da fonte da escrita*/
+  }
+  .inputBox label {
+    position: absolute; /*Já explicado*/
+    left: 0; /*Zerando a esquerda da label*/
+    padding: 20px 0px 15px; /*Posicionando a label de acordo com a div*/
+    font-size: 1em; /*Definindo tamanho da fonte da escrita*/
+    color: #656565; /*Define a cor da fonte da escrita da label*/
+    pointer-events: none; /*Sem foco do ponteiro*/
+    transition: 0.25s; /*Determina a duração da transição*/
+  }
+  .inputBox input:valid ~ label,
+  .inputBox input:focus ~ label {
+    color: #656565; /*Define a cor da fonte da escrita*/
+    transform: translateX(0px) translateY(-25px); /*Especificando o movimento da label*/
+    font-size: 0.80em; /*Definindo tamanho da fonte da escrita*/
+  }
+  .inputBox i {
+    position: absolute; /*Já explicado*/
+    left: 0; /*Zerando a esquerda da linha*/
+    bottom: 0; /*Zerando a parte inferior da linha*/
+    width: 100%; /*Definindo a largura da linha*/
+    height: 1px; /*Definindo a altura da linha*/
+    background: #6565653f; /*Definindo uma cor pro fundo*/
+    border-radius: 4px; /*Arredonda a borda*/
+    transition: 0.05s; /*Determina a duração da transição*/
+    pointer-events: none; /*Sem foco do ponteiro*/
+  }
+  
+    .inputBox input:valid ~ i,
+    .inputBox input:focus ~ i {
+      background: #656565; /*Definindo uma cor pro fundo*/
+    }
+    .inputBox:hover i {
+      background: #000000; /*Definindo uma cor pro fundo*/
+    }
+    .inputBox:hover label, .inputBox input:focus ~ label, 
+    .inputBox:hover select, .inputBox input:focus ~ select {
+      color: #000000; /*Define a cor da fonte da escrita*/
+    }
+    input[type="submit"] {
+      border: 2px solid #9163d7;
+      outline: none; /*Sem contorno*/
+      background: #9163d7; /*Definindo uma cor pro fundo*/
+      padding: 11px 25px; /*Distância do bottom em relação a sua div pai*/
+      margin-top: 10px; /*Distância do elemento em relação ao topo da div*/
+      border-radius: 4px; /*Arredonda a borda*/
+      font-weight: 600; /*Definindo o peso da escrita*/
+      cursor: pointer; /*Mudando o estilo do cursor para o submit*/
+      transition: .4s; /*Determina a duração da transição*/
+      color: #f8f8f8; /*Define a cor da fonte da escrita*/
+      text-transform: uppercase; /*Define todos os caracteres como maiúsculos*/
+    }
+    input[type="submit"]:active,
+    input[type="submit"]:hover {
+      opacity: 0.85; /*Alterando opacidade do bottom*/
+    }
+  
+  .inputBox input:valid ~ i,
+  .inputBox input:focus ~ i {
+    background: #656565; /*Definindo uma cor pro fundo*/
+  }
+  .inputBox:hover i {
+    background: #000000; /*Definindo uma cor pro fundo*/
+  }
+  .container-btn {
+    display: flex; /*Já explicado*/
+    justify-content: center; /*Alinha os elementos horizontalmente*/
+    align-items: center; /*Alinha os elementos verticalmente*/
+  }
